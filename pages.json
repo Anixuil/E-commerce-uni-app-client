@@ -1,0 +1,166 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "首页",
+				"enablePullDownRefresh":true,
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"placeholder": "请输入关键字",
+							"placeholderColor":"rgb(129,131,134)",
+							"borderRadius": "50upx",
+							"backgroundColor": "rgb(235,235,235)"
+						}
+					}
+				},
+				"h5":{
+					"titleNView":{
+						"searchInput":{
+							"align": "center",
+							"placeholder": "请输入关键字",
+							"placeholderColor":"rgb(129,131,134)",
+							"borderRadius": "50upx",
+							"backgroundColor": "rgb(235,235,235)"
+						}
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/xiangqing/xiangqing",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText": "详情展示",
+				"titleNView":{
+					"type":"transparent"
+				}
+			}
+		},
+		{
+			"path":"pages/kind/kind",
+			"style":{
+				"navigationBarTitleText":"分类",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/shopping/shopping",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText":"购物车",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/my/my",
+			"style":{
+				"enablePullDownRefresh":true,
+				"titleNView":false
+			}
+		},
+		{
+			"path":"pages/login/login",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText": "",
+				"titleNView":{
+					"type":"transparent"
+				}
+			}
+		},
+		{
+			"path":"pages/address/address",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText": "收货地址",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/addAddress/addAddress",
+			"style":{
+				"navigationBarTitleText": "新增收货地址",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/editAddress/editAddress",
+			"style":{
+				"navigationBarTitleText": "修改收货地址",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/set/set",
+			"style":{
+				"navigationBarTitleText": "设置",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/goodsList/goodsList",
+			"style":{
+				"navigationBarTitleText":"商品列表",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/dingdan/dingdan",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText":"创建订单",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/mydingdan/mydingdan",
+			"style":{
+				"navigationBarTitleText":"我的订单",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/pay/pay",
+			"style":{
+				"navigationBarTitleText":"支付",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/dingdanxiangqing/dingdanxiangqing",
+			"style":{
+				"navigationBarTitleText":"订单详情",
+				"navigationBarBackgroundColor":"white"
+			}
+		},
+		{
+			"path":"pages/myFav/myFav",
+			"style":{
+				"enablePullDownRefresh":true,
+				"navigationBarTitleText":"我的收藏",
+				"navigationBarBackgroundColor":"white"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"gray",
+		"selectedColor":"red",
+		"backgroundColor":"white",
+		"borderStyle":"",
+		"list":[
+			{"pagePath":"pages/index/index","iconPath":"./static/tabBar/home.png","selectedIconPath":"static/tabBar/home-o.png","text":"首页"},
+			{"pagePath":"pages/kind/kind","iconPath":"./static/tabBar/category.png","selectedIconPath":"static/tabBar/category-o.png","text":"分类"},
+			{"pagePath":"pages/shopping/shopping","iconPath":"./static/tabBar/cart.png","selectedIconPath":"static/tabBar/cart-o.png","text":"购物车"},
+			{"pagePath":"pages/my/my","iconPath":"./static/tabBar/my.png","selectedIconPath":"static/tabBar/my-o.png","text":"我的"}
+		]
+	}
+}
